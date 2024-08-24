@@ -1,0 +1,341 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+header {
+  background-color: #eac926;
+  width: 100vw;
+}
+.fa-bars:before {
+  content: "\f0c9";
+  color: white;
+}
+main {
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+}
+p {
+  font-size: 0.75rem;
+}
+ul {
+  list-style: none;
+  display: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 7px;
+}
+a {
+  text-decoration: none;
+}
+
+/*Estilos en el header*/
+.fa-search:before {
+  content: "\f002";
+}
+.login-navbar {
+  padding: 0;
+  display: none;
+  font-size: 0.75rem;
+}
+.img-banner {
+  width: 100vw;
+}
+.icono-cuotas {
+  text-align: center;
+}
+.logo-ml {
+  width: 50%;
+  flex: 0.5;
+}
+
+.formulario-busqueda {
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+  justify-content: center;
+  position: relative;
+}
+
+.formulario-busqueda input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.formulario-busqueda button {
+  display: flex;
+  position: absolute;
+  right: 10%;
+  padding: 9px 0px;
+  border: none;
+  cursor: pointer;
+}
+.burger-menu {
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+.burger-menu button {
+  padding: 4px;
+  background-color: #1259c3;
+  border-radius: 6px;
+}
+.logo-ml-barra-busqueda {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*Estilos main*/
+.contenedor-articulos {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-section-titulares {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ebebeb;
+}
+.main-section-precio {
+  font-size: 18px;
+  flex: 0.3;
+}
+.main-section-descuento {
+  font-size: 16px;
+  color: #39b54a;
+  flex: 0.7;
+}
+.main-section-descripcion {
+  font-size: 16px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.main-section-descripcion:hover {
+  opacity: 1;
+}
+.main-article {
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.main-article:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.logo-envio {
+  color: #39b54a;
+
+  border-color: #39b54a;
+  transition: transform 0.3s;
+}
+.logo-envio:hover {
+  transform: rotate(-90deg);
+}
+.caja-articulo {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+}
+.form-registro {
+  padding: 20px 15px;
+  background-color: #eac926;
+  margin: 10px 0px;
+}
+.div-form {
+  margin-bottom: 15px;
+}
+.div-form label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+  font-weight: bold;
+}
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.form-button {
+  background-color: #1259c3;
+  border: none;
+
+  color: #ebebeb;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.form-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.form-button-login {
+  background-color: #1259c3;
+  border: none;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-button-login a {
+  color: #ebebeb;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.form-button-login:hover {
+  background-color: #0022aa;
+}
+.form-input-foto {
+  cursor: pointer;
+}
+.caja-articulo .logo-envio {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main img {
+  width: 100%;
+}
+.precio-desc {
+  display: flex;
+  width: 100%;
+}
+
+/*Estilos footer*/
+footer {
+  text-align: center;
+}
+footer i {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 361px) {
+  .main-section-descripcion {
+    display: block;
+  }
+  .main-article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    width: calc(50% - 20px);
+  }
+  .login-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .icono-cuotas {
+    flex: 0.3;
+  }
+  .formulario-busqueda {
+    flex: 0.3;
+  }
+  .formulario-busqueda input {
+    padding: 0px;
+    border-radius: 0px;
+    border: none;
+  }
+  .formulario-busqueda button {
+    right: 0%;
+    padding: 0px;
+    border: 0.5px solid black;
+    cursor: pointer;
+  }
+  .menu-1 {
+    display: flex;
+  }
+  .menu-2 {
+    display: flex;
+  }
+  .form-input {
+    width: 40%;
+  }
+  .form-registro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-section-descripcion {
+    display: block;
+  }
+
+  .main-article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: calc(25% - 20px);
+  }
+  .login-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-1 {
+    display: flex;
+  }
+  .menu-2 {
+    display: flex;
+  }
+  .icono-cuotas {
+    flex: 0.3;
+  }
+  .logo-ml {
+    width: 50%;
+    flex: 0.5;
+  }
+
+  .formulario-busqueda {
+    flex: 0.3;
+  }
+  .formulario-busqueda input {
+    padding: 0px;
+    border-radius: 0px;
+    border: none;
+  }
+  .form-input {
+    width: 40%;
+  }
+  .form-registro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-1 {
+    display: flex;
+  }
+  .section-2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
